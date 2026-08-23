@@ -1,3 +1,53 @@
+# MacPulse 1.4.0
+
+## English
+
+Liquid Glass redesign plus readability and accuracy improvements.
+
+### Highlights
+
+- **Liquid Glass (macOS 26 Tahoe)** — native `glassEffect` with interactive tint, mesh orbs, and specular highlights across dashboard and menu bar panel
+- **Glass Intensity slider** in Settings — adjust card translucency (0.25–1.0) live, stored in UserDefaults
+- **Battery Health card** — cycle count, `AppleRawMaxCapacity / DesignCapacity` and `system_profiler` `Maximum Capacity` (matches System Settings), mAh display and Excellent/Good/Service condition
+- **Network session totals** — total downloaded / uploaded / combined traffic since boot with one-click copy to clipboard and toast
+- Improved readability for dark/light cards (more opaque `0.18/0.62` tint, reduced highlight, stronger shadows)
+- Fixed menu bar panel empty cards (removed `GlassEffectContainer` that hid `memoryBar`/`quickStats`/`processList`)
+- Fixed battery health showing 2% (was `MaxCapacity 100 / 4563`) — now uses `AppleRawMaxCapacity 3851` and authoritative 89% from `system_profiler`
+- Universal Binary for Apple Silicon and Intel, macOS 14+
+
+### Installation
+
+Download `MacPulse-1.4.0.dmg`, drag MacPulse into Applications, and launch it. Locally signed (ad-hoc), not Apple-notarized — use Finder **right-click → Open** on first launch. Do not disable Gatekeeper.
+
+## فارسی
+
+بازطراحی Liquid Glass به همراه بهبود خوانایی و دقت
+
+### تغییرات مهم
+
+- **Liquid Glass (استایل macOS 26 Tahoe)** — افکت شیشهٔ بومی `glassEffect` با تینت تعاملی، حباب‌های مش و هایلایت در داشبورد و منوبار
+- **اسلایدر شفافیت شیشه** در تنظیمات — تنظیم ماتی کارت‌ها به صورت زنده (۰.۲۵ تا ۱.۰) و ذخیره در UserDefaults
+- **کارت سلامت باتری** — تعداد چرخه، ظرفیت `AppleRawMaxCapacity / DesignCapacity` و درصد سلامت از `system_profiler` (هماهنگ با تنظیمات سیستم)، نمایش mAh و وضعیت عالی/خوب/نیاز به بررسی
+- **مجموع ترافیک شبکه** — کل دانلود/آپلود/ترافیک از زمان بوت با کپی یک‌کلیکی و توست
+- بهبود خوانایی کارت‌ها در تم روشن/تیره (شیشه مات‌تر ۰.۱۸/۰.۶۲، هایلایت کمتر، سایه قوی‌تر)
+- رفع خالی بودن کارت‌های منوبار (حذف `GlassEffectContainer` که محتوا را پنهان می‌کرد)
+- رفع نمایش اشتباه سلامت باتری ۲٪ (محاسبهٔ اشتباه `100/4563`) — الان ۸۹٪ درست با `AppleRawMaxCapacity` و `system_profiler`
+- نسخه Universal برای Apple Silicon و Intel، حداقل macOS 14
+
+### نصب
+
+فایل `MacPulse-1.4.0.dmg` را دانلود کنید، MacPulse را داخل Applications بکشید و اجرا کنید. امضای محلی (ad-hoc) دارد و Notarize نشده — در اولین اجرا Finder **راست‌کلیک → Open** بزنید. Gatekeeper را خاموش نکنید.
+
+## SHA-256
+
+```text
+bb982b77bed073ee646c1809e4a24ba4f57f1da2236c2bf9726ff51c544a76a2  MacPulse-1.4.0.dmg
+```
+
+created by **shayanmaher**
+
+---
+
 # MacPulse 1.3.0
 
 ## English
